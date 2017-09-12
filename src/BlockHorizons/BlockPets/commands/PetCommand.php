@@ -16,7 +16,7 @@ class PetCommand extends BaseCommand {
 		$this->setPermission("blockpets.command.pet");
 	}
 
-	public function execute(CommandSender $sender, string $commandLabel, array $args): bool {
+	public function onCommand(CommandSender $sender, Command $command, $label, array $args);
 		if(!$this->testPermission($sender)) {
 			$this->sendPermissionMessage($sender);
 			return true;
