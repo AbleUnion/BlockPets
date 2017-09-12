@@ -16,7 +16,7 @@ class SpawnPetCommand extends BaseCommand {
 		$this->setPermission("blockpets.command.spawnpet.use");
 	}
 
-	public function execute(CommandSender $sender, string $commandLabel, array $args): bool {
+	public function onCommand(CommandSender $sender, Command $command, $label, array $args);
 		/*
 		 * Hack to make spawnpet command work, required because parameter ordering is messed up.
 		 * TODO: Remove
