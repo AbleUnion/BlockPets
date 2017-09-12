@@ -15,7 +15,7 @@ class RemovePetCommand extends BaseCommand {
 		$this->setPermission("blockpets.command.removepet");
 	}
 
-	public function execute(CommandSender $sender, string $commandLabel, array $args): bool {
+	public function onCommand(CommandSender $sender, Command $command, $label, array $args);
 		if(!$this->testPermission($sender)) {
 			$this->sendPermissionMessage($sender);
 			return true;
